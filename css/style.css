@@ -54,7 +54,7 @@ section {
   height: 320px;
   width: 320px;
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.596);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .hero-image img {
@@ -92,8 +92,8 @@ section {
     width: 90%;
   }
   .hero-image {
-    width: 550px;
-    height: 550px;
+    width: 40%;
+    height: 40%;
   }
   .hero-content {
     width: 680px;
