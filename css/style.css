@@ -19,6 +19,21 @@ body {
 }
 
 /* General Styles */
+.link-button {
+  padding: 15px 25px;
+  background: var(--button-background);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.link-arrow {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
 
 /* Hero Section Styles */
 section {
@@ -68,21 +83,6 @@ section {
   margin-bottom: 20px;
 }
 
-.link-button {
-  padding: 15px 25px;
-  background: var(--button-background);
-  color: #fff;
-  border: none;
-  border-radius: 40px;
-  font-size: 20px;
-}
-
-.link-arrow {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-}
-
 @media screen and (min-width: 992px) {
   section {
     margin: 0 auto 100px;
@@ -126,5 +126,73 @@ section {
     width: 90%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     border-top: 1px solid rgba(128, 128, 128, 0.3);
+  }
+}
+
+/* Collection Card Styles */
+.collection-section h2 {
+  text-align: center;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.items {
+  display: grid;
+}
+
+.item {
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.6);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 20px;
+}
+
+.item img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.item-content {
+  width: 80%;
+}
+
+.item-content h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+  color: #fb8200;
+}
+
+.item-content p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+
+.transparent-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.transparent-button button {
+  background: transparent;
+  color: var(--button-background);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 996px) {
+  .collection-section {
+    width: 80%;
+  }
+  .items {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
