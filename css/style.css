@@ -24,7 +24,7 @@ body {
   color: #fff;
   border: none;
   border-radius: 40px;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -69,14 +69,14 @@ section {
 }
 
 .hero-content h1 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 40px;
   margin-bottom: 15px;
 }
 
 .hero-content p {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 25px;
   margin-bottom: 20px;
@@ -102,8 +102,8 @@ section {
     margin-right: 135px;
   }
   .hero-content h1 {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 28px;
+    line-height: 42px;
   }
 }
 
@@ -134,7 +134,7 @@ section {
   text-align: center;
   font-weight: 600;
   line-height: 25px;
-  font-size: 25px;
+  font-size: 28px;
   margin-bottom: 20px;
   color: var(--primary-color);
 }
@@ -170,7 +170,7 @@ section {
 }
 
 .item-content p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
   margin-bottom: 20px;
@@ -202,6 +202,8 @@ section {
 .feature-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 80%;
 }
 .feature-content {
@@ -215,9 +217,9 @@ section {
 }
 
 .feature-content p {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 40px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .feature-button {
@@ -231,7 +233,7 @@ section {
 }
 
 .feature-image img {
-  width: 600px;
+  width: 500px;
 }
 
 @media screen and (min-width: 992px) {
@@ -241,8 +243,8 @@ section {
   .feature-content {
     text-align: left;
   }
-  .feature-image img {
-    margin-right: 100px;
+  .feature-image {
+    margin-right: 150px;
   }
 }
 
