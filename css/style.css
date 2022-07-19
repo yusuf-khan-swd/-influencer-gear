@@ -232,10 +232,6 @@ section {
   margin: 0 auto;
 }
 
-.feature-image img {
-  width: 500px;
-}
-
 @media screen and (min-width: 992px) {
   .feature-section {
     flex-direction: row-reverse;
