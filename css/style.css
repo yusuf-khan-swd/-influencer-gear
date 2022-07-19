@@ -14,13 +14,17 @@
 /* Fonts */
 body {
   @import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500;700&display=swap");
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   font-family: "Poppins", sans-serif;
 }
 
 /* General Styles */
 
 /* Hero Section Styles */
+section {
+  margin-bottom: 50px;
+}
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -80,8 +84,12 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  section {
+    margin: 0 auto 100px;
+  }
   .hero-section {
     flex-direction: row-reverse;
+    width: 90%;
   }
   .hero-image {
     width: 440px;
@@ -96,5 +104,27 @@ body {
   .hero-content h1 {
     font-size: 52px;
     line-height: 70px;
+  }
+}
+
+/* Logo section */
+.logo-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon {
+  margin: 10px 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .logo-section {
+    margin: 0 auto 100px;
+    height: 110px;
+    width: 90%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
   }
 }
