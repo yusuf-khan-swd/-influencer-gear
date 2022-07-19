@@ -37,7 +37,7 @@ body {
 
 /* Hero Section Styles */
 section {
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
 }
 
 .hero-section {
@@ -70,14 +70,14 @@ section {
 }
 
 .hero-content h1 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 40px;
   margin-bottom: 15px;
 }
 
 .hero-content p {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 25px;
   margin-bottom: 20px;
@@ -195,4 +195,75 @@ section {
   .items {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* Feature sectiion */
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.feature-content {
+  text-align: center;
+}
+
+.feature-content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.feature-content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.feature-button {
+  border-radius: 0;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.feature-image {
+  margin: 0 auto;
+}
+
+.feature-image img {
+  width: 600px;
+}
+
+@media screen and (min-width: 992px) {
+  .feature-section {
+    flex-direction: row-reverse;
+  }
+  .feature-content {
+    text-align: left;
+  }
+  .feature-image img {
+    margin-right: 100px;
+  }
+}
+
+/* Footer section */
+footer {
+  height: 240px;
+  background: var(--footer-background);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 25px;
 }
